@@ -1,0 +1,67 @@
+/* ============================================================
+   GPUse — responsive.css
+   Simple responsive resize: no separate mobile design,
+   columns just stack on narrow screens.
+   Loaded LAST on every page so these rules win.
+   ============================================================ */
+
+@media (max-width: 900px) {
+  .cards3,
+  .steps {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cols2,
+  .grid2,
+  .class-row {
+    grid-template-columns: 1fr;
+  }
+  .stats4 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .earn-panel {
+    flex-direction: column;
+  }
+  .net-side {
+    flex: none;
+  }
+  .table-wrap {
+    overflow-x: auto;
+  }
+  table {
+    min-width: 700px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards3,
+  .steps,
+  .stats4 {
+    grid-template-columns: 1fr;
+  }
+  .card-stat {
+    width: 100%;
+  }
+  .hero h1 {
+    font-size: 36px;
+  }
+  .page-head h1 {
+    font-size: 32px;
+  }
+  .nav {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 12px 0;
+    gap: 12px;
+  }
+  .banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .search-row {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

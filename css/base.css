@@ -1,0 +1,122 @@
+/* ============================================================
+   GPUse — base.css
+   Reset, page layout, nav, buttons, titles, footer.
+   Loaded first on every page.
+   ============================================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0f0f0f;
+  color: #ffffff;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Centered 1200px content column (the Figma screens are 1200 wide) */
+.wrap {
+  max-width: 1248px; /* 1200 content + 24px gutter on each side */
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- Nav ---------- */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  border-bottom: 1px solid #383838;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.logo span {
+  color: #a3ff00;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #b3b3b3;
+}
+
+.nav-links a.active {
+  color: #a3ff00;
+  font-weight: 600;
+}
+
+/* ---------- Buttons ---------- */
+.btn-primary,
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #a3ff00;
+  color: #0f0f0f;
+}
+
+.btn {
+  background: #181818;
+  color: #ffffff;
+  border: 1px solid #5a5a5a;
+}
+
+.btn-block {
+  display: block;
+}
+
+.btn-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ---------- Page titles & footer ---------- */
+.page-head {
+  padding-top: 40px;
+}
+
+.page-head h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.page-head .sub {
+  font-size: 18px;
+  color: #b3b3b3;
+  margin-top: 12px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0 32px;
+  font-size: 14px;
+  color: #b3b3b3;
+}

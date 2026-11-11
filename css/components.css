@@ -1,0 +1,204 @@
+/* ============================================================
+   GPUse — components.css
+   Reusable pieces used on more than one page:
+   panels, form fields, stat cards, GPU cards, tables, checkbox.
+   Loaded second on every page.
+   ============================================================ */
+
+/* ---------- Panels & form basics ---------- */
+.panel {
+  background: #181818;
+  border: 1px solid #383838;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Buttons inside a panel hug the left edge, unless full-width */
+.panel .btn-primary,
+.panel .btn {
+  align-self: flex-start;
+}
+
+.panel .btn-block {
+  align-self: stretch;
+}
+
+.flabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: #5a5a5a;
+}
+
+.field {
+  width: 100%;
+  background: #222222;
+  border: 1px solid #383838;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 16px;
+  font-family: inherit;
+  color: #ffffff;
+}
+
+textarea.field {
+  height: 84px;
+  resize: vertical;
+}
+
+select.field option {
+  background: #222222;
+}
+
+.fine {
+  font-size: 14px;
+  color: #5a5a5a;
+}
+
+/* ---------- Stat card (Landing stats, Host telemetry) ---------- */
+.card-stat {
+  background: #181818;
+  border: 1px solid #383838;
+  border-radius: 8px;
+  padding: 20px;
+  width: 288px;
+}
+
+.card-stat .k {
+  font-size: 12px;
+  font-weight: 600;
+  color: #5a5a5a;
+}
+
+.card-stat .v {
+  font-size: 32px;
+  font-weight: 800;
+  margin-top: 8px;
+}
+
+/* ---------- 3-column card grid (Landing, Browse) ---------- */
+.cards3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 16px 0 32px;
+}
+
+/* ---------- GPU listing card (.card-host) ---------- */
+.card-host {
+  background: #181818;
+  border: 1px solid #383838;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.badge {
+  background: #a3ff00;
+  color: #0f0f0f;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+
+.badge.busy {
+  background: #383838;
+  color: #ffffff;
+}
+
+.card-host h3 {
+  font-size: 20px;
+}
+
+.card-host .gpu {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card-host .meta {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.card-host .price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #a3ff00;
+}
+
+.card-btn {
+  display: block;
+  align-self: stretch;
+  background: #a3ff00;
+  color: #0f0f0f;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* ---------- Tables (My jobs, Host) ---------- */
+.table-wrap {
+  background: #181818;
+  border: 1px solid #383838;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 24px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+th {
+  background: #222222;
+  color: #5a5a5a;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+  padding: 16px;
+}
+
+td {
+  padding: 16px;
+}
+
+td:first-child {
+  font-weight: 600;
+}
+
+td.st,
+th.st {
+  color: #a3ff00;
+}
+
+td.st {
+  font-weight: 400;
+}
+
+/* ---------- Square checkbox (List your GPU) ---------- */
+/* Plain square, lime when checked (like the Figma squares) */
+.cb {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  flex: none;
+  border-radius: 4px;
+  background: #222222;
+  border: 1px solid #5a5a5a;
+  cursor: pointer;
+}
+
+.cb:checked {
+  background: #a3ff00;
+  border-color: #a3ff00;
+}
