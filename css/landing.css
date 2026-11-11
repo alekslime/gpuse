@@ -1,0 +1,95 @@
+/* ============================================================
+   GPUse — landing.css  (index.html only)
+   Hero, stats row, "How it works" cards, lime banner.
+   ============================================================ */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 48px 0 32px;
+}
+
+.eyebrow {
+  color: #a3ff00;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: 800;
+  max-width: 800px;
+}
+
+.hero .lead {
+  font-size: 20px;
+  color: #b3b3b3;
+  max-width: 760px;
+}
+
+.stats {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* "How it works" step cards */
+.step-card {
+  background: #181818;
+  border: 1px solid #383838;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.step-card h3 {
+  font-size: 20px;
+}
+
+.step-card p {
+  font-size: 16px;
+  color: #b3b3b3;
+}
+
+.step-card p.step-num {
+  font-size: 24px;
+  font-weight: 800;
+  color: #a3ff00;
+}
+
+/* Lime banner at the bottom */
+.banner {
+  background: #a3ff00;
+  color: #0f0f0f;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.banner h2 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.banner p {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.btn-dark {
+  background: #0f0f0f;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
