@@ -5,6 +5,17 @@
    Loaded LAST on every page so these rules win.
    ============================================================ */
 
+/* Big screens: widen the 1200 column to 1600 (same as the
+   1920 Figma screens) so the sides don't sit empty. */
+@media (min-width: 1600px) {
+  .wrap {
+    max-width: 1648px; /* 1600 content + 24px gutter on each side */
+  }
+  .cards3 {
+    gap: 24px;
+  }
+}
+
 @media (max-width: 900px) {
   .cards3,
   .steps {
