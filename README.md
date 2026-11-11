@@ -29,12 +29,12 @@ Everything is plain HTML + CSS. No JavaScript, no framework, no build step.
 ## Screenshots
 
 **Landing** — [`index.html`](index.html)
-<img src="screenshots/landing.png?v=2" alt="Landing page" width="100%">
+<img src="screenshots/landing-v2.png" alt="Landing page" width="100%">
 
 | | |
 |---|---|
-| **Browse GPUs** — [`browse.html`](browse.html) <br><img src="screenshots/browse.png?v=2" alt="Browse GPUs page" width="100%"> | **My jobs** — [`my-jobs.html`](my-jobs.html) <br><img src="screenshots/my-jobs.png?v=2" alt="My jobs page" width="100%"> |
-| **Log in** — [`login.html`](login.html) <br><img src="screenshots/login.png?v=2" alt="Login page" width="100%"> | **Sign up** — [`signup.html`](signup.html) <br><img src="screenshots/signup.png?v=2" alt="Sign up page" width="100%"> |
+| **Browse GPUs** — [`browse.html`](browse.html) <br><img src="screenshots/browse-v2.png" alt="Browse GPUs page" width="100%"> | **My jobs** — [`my-jobs.html`](my-jobs.html) <br><img src="screenshots/my-jobs-v2.png" alt="My jobs page" width="100%"> |
+| **Log in** — [`login.html`](login.html) <br><img src="screenshots/login-v2.png" alt="Login page" width="100%"> | **Sign up** — [`signup.html`](signup.html) <br><img src="screenshots/signup-v2.png" alt="Sign up page" width="100%"> |
 
 ## Run it locally
 
