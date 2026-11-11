@@ -1,5 +1,11 @@
 # gpuse
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/logo.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/logo-light.svg">
+  <img src="assets/logo.svg" alt="GPUse" width="220">
+</picture>
+
 A distributed GPU compute network that turns idle computing resources into shared processing power. Connect machines, distribute workloads, and execute GPU tasks across a decentralized network.
 
 ![HTML5](https://img.shields.io/badge/HTML5-structure-E34F26?logo=html5&logoColor=white)
@@ -23,12 +29,12 @@ Everything is plain HTML + CSS. No JavaScript, no framework, no build step.
 ## Screenshots
 
 **Landing** — [`index.html`](index.html)
-<img src="screenshots/landing.png" alt="Landing page" width="100%">
+<img src="screenshots/landing.png?v=2" alt="Landing page" width="100%">
 
 | | |
 |---|---|
-| **Browse GPUs** — [`browse.html`](browse.html) <br><img src="screenshots/browse.png" alt="Browse GPUs page" width="100%"> | **My jobs** — [`my-jobs.html`](my-jobs.html) <br><img src="screenshots/my-jobs.png" alt="My jobs page" width="100%"> |
-| **Log in** — [`login.html`](login.html) <br><img src="screenshots/login.png" alt="Login page" width="100%"> | **Sign up** — [`signup.html`](signup.html) <br><img src="screenshots/signup.png" alt="Sign up page" width="100%"> |
+| **Browse GPUs** — [`browse.html`](browse.html) <br><img src="screenshots/browse.png?v=2" alt="Browse GPUs page" width="100%"> | **My jobs** — [`my-jobs.html`](my-jobs.html) <br><img src="screenshots/my-jobs.png?v=2" alt="My jobs page" width="100%"> |
+| **Log in** — [`login.html`](login.html) <br><img src="screenshots/login.png?v=2" alt="Login page" width="100%"> | **Sign up** — [`signup.html`](signup.html) <br><img src="screenshots/signup.png?v=2" alt="Sign up page" width="100%"> |
 
 ## Run it locally
 
@@ -60,6 +66,7 @@ gpuse/
 ├── my-jobs.html        # My jobs
 ├── login.html          # Log in
 ├── signup.html         # Sign up
+├── assets/             # Logo from Figma (logo.svg, logo-light.svg for light backgrounds)
 ├── css/
 │   ├── base.css        # Reset, layout, nav, buttons, footer (all pages)
 │   ├── components.css  # Shared pieces: panels, fields, cards, tables
