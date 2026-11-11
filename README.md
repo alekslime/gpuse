@@ -16,11 +16,14 @@ GPUse is a peer-to-peer GPU marketplace — think "Airbnb for compute":
 
 ## This branch (`aleks`)
 
-This is one of four team branches. It contains the **Browse GPUs**, **My Jobs** and **login/signup** parts of the frontend, plus the screenshots folder. The other screens (landing, create a job, host dashboard, list your GPU) live on the other team members' branches and are merged into `main` from there — that's why some nav links (Home / Create / Host) only work once everything is merged.
+This is one of four team branches. It contains the **Landing**, **Browse GPUs**, **My Jobs** and **login/signup** parts of the frontend, plus the screenshots folder. The other screens (create a job, host dashboard, list your GPU) live on the other team members' branches and are merged into `main` from there — that's why some nav links (Create / Host) only work once everything is merged.
 
 Everything is plain HTML + CSS. No JavaScript, no framework, no build step.
 
 ## Screenshots
+
+**Landing** — [`index.html`](index.html)
+<img src="screenshots/landing.png" alt="Landing page" width="100%">
 
 | | |
 |---|---|
@@ -29,19 +32,20 @@ Everything is plain HTML + CSS. No JavaScript, no framework, no build step.
 
 ## Run it locally
 
-No install needed. Either open `browse.html` in a browser, or serve the folder:
+No install needed. Either open `index.html` in a browser, or serve the folder:
 
 ```bash
 git clone -b aleks https://github.com/alekslime/gpuse.git
 cd gpuse
 python3 -m http.server 8000
-# → http://localhost:8000/browse.html
+# → http://localhost:8000
 ```
 
 ## Pages on this branch
 
 | File | Screen | What it shows |
 |---|---|---|
+| `index.html` | Landing | Hero, live stats, how it works, featured GPUs, host banner |
 | `browse.html` | Browse GPUs | Search, filters, GPU listing cards with price & speed |
 | `my-jobs.html` | My jobs | Job history table + empty state |
 | `login.html` | Log in | Email + password login |
@@ -51,6 +55,7 @@ python3 -m http.server 8000
 
 ```
 gpuse/
+├── index.html          # Landing
 ├── browse.html         # Browse GPUs
 ├── my-jobs.html        # My jobs
 ├── login.html          # Log in
@@ -59,6 +64,7 @@ gpuse/
 │   ├── base.css        # Reset, layout, nav, buttons, footer (all pages)
 │   ├── components.css  # Shared pieces: panels, fields, cards, tables
 │   ├── browse.css      # One small file per page…
+│   ├── landing.css
 │   ├── my-jobs.css
 │   ├── auth.css        # Log in + sign up
 │   └── responsive.css  # Narrow-screen stacking (loaded last)
