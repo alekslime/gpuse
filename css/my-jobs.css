@@ -1,0 +1,26 @@
+/* ============================================================
+   GPUse — my-jobs.css  (my-jobs.html only)
+   Action buttons under the table, and the empty-state card.
+   The table itself lives in components.css.
+   ============================================================ */
+
+.actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 16px 0 24px;
+}
+
+.empty h3 {
+  font-size: 24px;
+}
+
+.empty p {
+  font-size: 16px;
+  color: #b3b3b3;
+}
+
+.empty p.flabel {
+  font-size: 12px;
+  color: #5a5a5a;
+}

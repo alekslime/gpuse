@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPUse — My jobs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/my-jobs.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="nav">
+      <a class="logo" href="index.html"><span>GPU</span>se</a>
+      <nav class="nav-links">
+        <a href="browse.html">Browse GPUs</a>
+        <a href="create.html">Create</a>
+        <a href="my-jobs.html" class="active">My jobs</a>
+        <a href="host.html">Host</a>
+      </nav>
+      <a class="btn" href="browse.html">Switch to renting</a>
+    </header>
+
+    <main>
+      <div class="page-head">
+        <h1>My jobs</h1>
+        <p class="sub">Everything you have made. Download finished results or run a job again.</p>
+      </div>
+
+      <div class="table-wrap" style="margin-top: 16px;">
+        <table>
+          <colgroup>
+            <col style="width: 140px;">
+            <col style="width: 360px;">
+            <col style="width: 260px;">
+            <col style="width: 140px;">
+            <col style="width: 140px;">
+            <col style="width: 160px;">
+          </colgroup>
+          <tr>
+            <th>JOB</th>
+            <th>WHAT YOU MADE</th>
+            <th>HOST / GPU</th>
+            <th>TIME</th>
+            <th>COST</th>
+            <th>STATUS</th>
+          </tr>
+          <tr>
+            <td>#2043</td>
+            <td>Image · Lighthouse prompt</td>
+            <td>@pixelforge · RTX 4090</td>
+            <td>24 sec</td>
+            <td>$0.04</td>
+            <td class="st">Running</td>
+          </tr>
+          <tr>
+            <td>#2040</td>
+            <td>Image · Flux.1 dev</td>
+            <td>@darkroom_pc · RTX 3090</td>
+            <td>11 sec</td>
+            <td>$0.01</td>
+            <td class="st">Done</td>
+          </tr>
+          <tr>
+            <td>#2039</td>
+            <td>Video · Wan 2.2 clip</td>
+            <td>@nightowl_render · RTX 3090</td>
+            <td>40 sec</td>
+            <td>$0.06</td>
+            <td class="st">Done</td>
+          </tr>
+          <tr>
+            <td>#2038</td>
+            <td>Audio · XTTS voice</td>
+            <td>@synthwave_studio · RTX 4090</td>
+            <td>15 sec</td>
+            <td>$0.02</td>
+            <td class="st">Done</td>
+          </tr>
+          <tr>
+            <td>#2037</td>
+            <td>3D · TripoSR model</td>
+            <td>@meshmaker · RTX 4070 Ti</td>
+            <td>25 sec</td>
+            <td>$0.04</td>
+            <td class="st">Done</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="actions">
+        <a class="btn-primary" href="create.html">Create a new job</a>
+        <a class="btn" href="#">Download last result</a>
+      </div>
+
+      <!-- Empty state: show this card instead of the table when a user has no jobs yet -->
+      <div class="panel empty">
+        <p class="flabel">Empty state — use this card instead of the table when a user has no jobs yet:</p>
+        <h3>No jobs yet. Make your first one.</h3>
+        <p>Pick a GPU, type a prompt, and your result will appear here.</p>
+      </div>
+    </main>
+
+    <footer>
+      <p>GPUse — Make anything. Powered by idle GPUs.</p>
+      <p>Help · Terms · Privacy</p>
+    </footer>
+
+  </div>
+</body>
+</html>
