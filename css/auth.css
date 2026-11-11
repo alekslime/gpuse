@@ -1,0 +1,61 @@
+/* ============================================================
+   GPUse — auth.css  (login.html + signup.html only)
+   One centered 480px panel. Fields, buttons and labels
+   come from components.css / base.css.
+   ============================================================ */
+
+.auth-wrap {
+  max-width: 480px;
+  margin: 56px auto 64px;
+}
+
+.auth-panel {
+  padding: 32px;
+}
+
+.auth-panel h1 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.auth-panel .sub {
+  font-size: 16px;
+  color: #b3b3b3;
+}
+
+/* Label sits close above its input */
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.auth-panel button.btn-primary {
+  border: none;
+  font-family: inherit;
+  width: 100%;
+}
+
+/* "Forgot your password?" */
+.forgot {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #a3ff00;
+}
+
+/* "New to GPUse? Create an account" */
+.switch {
+  text-align: center;
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.switch a {
+  font-weight: 600;
+  color: #a3ff00;
+}
+
+.auth-panel .fine {
+  text-align: center;
+}
