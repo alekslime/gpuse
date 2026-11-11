@@ -1,0 +1,39 @@
+/* ============================================================
+   GPUse — browse.css  (browse.html only)
+   Search row, filter chips, footnote.
+   The GPU cards themselves live in components.css (.card-host).
+   ============================================================ */
+
+.search-row {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.search-input {
+  flex: 1;
+  background: #181818;
+  border: 1px solid #383838;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 16px;
+  font-family: inherit;
+  color: #ffffff;
+}
+
+.search-input::placeholder {
+  color: #5a5a5a;
+}
+
+.chips {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 16px 0 24px;
+}
+
+.note {
+  font-size: 14px;
+  color: #5a5a5a;
+  margin: 16px 0 32px;
+}

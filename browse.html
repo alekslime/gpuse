@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPUse — Browse GPUs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/browse.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="nav">
+      <a class="logo" href="index.html"><span>GPU</span>se</a>
+      <nav class="nav-links">
+        <a href="browse.html" class="active">Browse GPUs</a>
+        <a href="create.html">Create</a>
+        <a href="my-jobs.html">My jobs</a>
+        <a href="host.html">Host</a>
+      </nav>
+      <a class="btn-primary" href="login.html">Sign in</a>
+    </header>
+
+    <main>
+      <div class="page-head">
+        <h1>Browse GPUs</h1>
+        <p class="sub">Real PCs, real prices. Pay per result, not per month.</p>
+      </div>
+
+      <div class="search-row">
+        <input class="search-input" type="text" placeholder="Describe what you want to make…">
+        <a class="btn-primary" href="#">Find a GPU</a>
+      </div>
+
+      <div class="chips">
+        <a class="btn-primary" href="#">All</a>
+        <a class="btn" href="#">Image</a>
+        <a class="btn" href="#">Video</a>
+        <a class="btn" href="#">Audio</a>
+        <a class="btn" href="#">3D</a>
+        <a class="btn" href="#">Online now</a>
+        <a class="btn" href="#">Under $0.05</a>
+      </div>
+
+      <div class="cards3" style="margin-top: 0;">
+        <article class="card-host">
+          <span class="badge">Available</span>
+          <h3>@pixelforge</h3>
+          <p class="gpu">RTX 4090 · 24 GB VRAM</p>
+          <p class="meta">Berlin · Image, Video · Flux, SDXL</p>
+          <p class="price">$0.01 / image · about 9 sec</p>
+          <a class="card-btn" href="create.html">View GPU</a>
+        </article>
+        <article class="card-host">
+          <span class="badge">Available</span>
+          <h3>@nightowl_render</h3>
+          <p class="gpu">RTX 3090 · 24 GB VRAM</p>
+          <p class="meta">Warsaw · Video · Wan 2.2, Hunyuan</p>
+          <p class="price">$0.06 / clip · about 40 sec</p>
+          <a class="card-btn" href="create.html">View GPU</a>
+        </article>
+        <article class="card-host">
+          <span class="badge busy">Busy</span>
+          <h3>@synthwave_studio</h3>
+          <p class="gpu">RTX 4090 · 16 GB VRAM</p>
+          <p class="meta">Lisbon · Audio · Stable Audio, XTTS</p>
+          <p class="price">$0.02 / minute · about 15 sec</p>
+          <a class="card-btn" href="create.html">View GPU</a>
+        </article>
+        <article class="card-host">
+          <span class="badge">Available</span>
+          <h3>@meshmaker</h3>
+          <p class="gpu">RTX 4070 Ti · 16 GB VRAM</p>
+          <p class="meta">Toronto · 3D · TripoSR, TRELLIS</p>
+          <p class="price">$0.04 / model · about 25 sec</p>
+          <a class="card-btn" href="create.html">View GPU</a>
+        </article>
+        <article class="card-host">
+          <span class="badge">Available</span>
+          <h3>@lumen_lab</h3>
+          <p class="gpu">RTX 5090 · 32 GB VRAM</p>
+          <p class="meta">Austin · Image · Flux, Qwen Image</p>
+          <p class="price">$0.02 / image · about 5 sec</p>
+          <a class="card-btn" href="create.html">View GPU</a>
+        </article>
+        <article class="card-host">
+          <span class="badge">Available</span>
+          <h3>@gpu_garage</h3>
+          <p class="gpu">RTX 3080 · 10 GB VRAM</p>
+          <p class="meta">Tampa · Image · SDXL, Real-ESRGAN</p>
+          <p class="price">$0.005 / image · about 14 sec</p>
+          <a class="card-btn" href="create.html">View GPU</a>
+        </article>
+      </div>
+
+      <p class="note">Showing 6 of 128 GPUs · Prices are set by hosts and shown before you run a job.</p>
+    </main>
+
+    <footer>
+      <p>GPUse — Make anything. Powered by idle GPUs.</p>
+      <p>Help · Terms · Privacy</p>
+    </footer>
+
+  </div>
+</body>
+</html>
