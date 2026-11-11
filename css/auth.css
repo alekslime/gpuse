@@ -4,12 +4,19 @@
    come from components.css / base.css.
    ============================================================ */
 
+/* Panel centred both ways in the space between nav and footer.
+   (base.css makes <main> fill the viewport height.) */
 .auth-wrap {
+  width: 100%;
   max-width: 480px;
-  margin: 56px auto 64px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
 }
 
 .auth-panel {
+  width: 100%;
   padding: 32px;
 }
 

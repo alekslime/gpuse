@@ -21,11 +21,23 @@ a {
   text-decoration: none;
 }
 
-/* Centered 1200px content column (the Figma screens are 1200 wide) */
+/* Centered 1200px content column (the Figma screens are 1200 wide).
+   Full viewport height: footer sticks to the bottom of the screen,
+   and short pages (login etc.) can centre their content in between. */
 .wrap {
   max-width: 1248px; /* 1200 content + 24px gutter on each side */
   margin: 0 auto;
   padding: 0 24px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap > main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ---------- Nav ---------- */
