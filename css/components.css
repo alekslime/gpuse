@@ -9,7 +9,7 @@
 .panel {
   background: #181818;
   border: 1px solid #383838;
-  border-radius: 8px;
+  border-radius: 0;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@
   width: 100%;
   background: #222222;
   border: 1px solid #383838;
-  border-radius: 8px;
+  border-radius: 0;
   padding: 14px;
   font-size: 16px;
   font-family: inherit;
@@ -61,7 +61,7 @@ select.field option {
 .card-stat {
   background: #181818;
   border: 1px solid #383838;
-  border-radius: 8px;
+  border-radius: 0;
   padding: 20px;
   width: 288px;
 }
@@ -90,7 +90,7 @@ select.field option {
 .card-host {
   background: #181818;
   border: 1px solid #383838;
-  border-radius: 8px;
+  border-radius: 0;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -104,7 +104,7 @@ select.field option {
   font-size: 12px;
   font-weight: 600;
   padding: 6px 8px;
-  border-radius: 8px;
+  border-radius: 0;
 }
 
 .badge.busy {
@@ -140,14 +140,14 @@ select.field option {
   font-size: 16px;
   font-weight: 600;
   padding: 12px;
-  border-radius: 8px;
+  border-radius: 0;
 }
 
 /* ---------- Tables (My jobs, Host) ---------- */
 .table-wrap {
   background: #181818;
   border: 1px solid #383838;
-  border-radius: 8px;
+  border-radius: 0;
   overflow: hidden;
   margin-top: 24px;
 }
@@ -192,7 +192,7 @@ td.st {
   width: 22px;
   height: 22px;
   flex: none;
-  border-radius: 4px;
+  border-radius: 0;
   background: #222222;
   border: 1px solid #5a5a5a;
   cursor: pointer;
