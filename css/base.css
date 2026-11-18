@@ -21,9 +21,6 @@ a {
   text-decoration: none;
 }
 
-/* Centered 1200px content column (the Figma screens are 1200 wide).
-   Full viewport height: footer sticks to the bottom of the screen,
-   and short pages (login etc.) can centre their content in between. */
 .wrap {
   max-width: 1248px; /* 1200 content + 24px gutter on each side */
   margin: 0 auto;
@@ -66,6 +63,14 @@ a {
   color: #b3b3b3;
 }
 
+.nav-links a {
+  transition: color 0.15s ease;
+}
+
+.nav-links a:not(.active):hover {
+  color: #ffffff;
+}
+
 .nav-links a.active {
   color: #a3ff00;
   font-weight: 600;
@@ -81,6 +86,7 @@ a {
   font-weight: 600;
   text-align: center;
   cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
 
 .btn-primary {
@@ -88,10 +94,19 @@ a {
   color: #0f0f0f;
 }
 
+.btn-primary:hover {
+  background: #b9ff3d;
+}
+
 .btn {
   background: #181818;
   color: #ffffff;
   border: 1px solid #5a5a5a;
+}
+
+.btn:hover {
+  background: #222222;
+  border-color: #808080;
 }
 
 .btn-block {

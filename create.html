@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPUse — Create a job</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/create.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="nav">
+      <a class="logo" href="index.html"><img src="assets/logo.svg" alt="GPUse"></a>
+      <nav class="nav-links">
+        <a href="browse.html">Browse GPUs</a>
+        <a href="create.html" class="active">Create</a>
+        <a href="my-jobs.html">My jobs</a>
+        <a href="host.html">Host</a>
+      </nav>
+      <a class="btn-primary" href="login.html">Sign in</a>
+    </header>
+
+    <main>
+      <div class="page-head">
+        <h1>Create a job</h1>
+        <p class="sub">Describe it. GPUse runs it on the GPU you pick and sends the result back.</p>
+      </div>
+
+      <div class="cols2">
+        <form class="panel">
+          <p class="flabel">WHAT DO YOU WANT TO MAKE?</p>
+          <div class="chips">
+            <a class="btn-primary" href="#">Image</a>
+            <a class="btn" href="#">Video</a>
+            <a class="btn" href="#">Audio</a>
+            <a class="btn" href="#">3D</a>
+          </div>
+
+          <label class="flabel" for="prompt">PROMPT</label>
+          <textarea class="field" id="prompt">A lighthouse on a cliff at dusk, oil painting, warm light</textarea>
+
+          <label class="flabel" for="negative">NEGATIVE PROMPT (OPTIONAL)</label>
+          <input class="field" id="negative" type="text" value="blurry, low quality, watermark, text">
+
+          <label class="flabel" for="model">MODEL</label>
+          <select class="field" id="model">
+            <option selected>Stable Diffusion XL</option>
+            <option>Flux.1 dev</option>
+            <option>Flux schnell</option>
+            <option>Wan 2.2</option>
+          </select>
+
+          <p class="flabel">ASPECT RATIO</p>
+          <div class="chips">
+            <a class="btn-primary" href="#">1:1</a>
+            <a class="btn" href="#">16:9</a>
+            <a class="btn" href="#">9:16</a>
+            <a class="btn" href="#">4:3</a>
+          </div>
+
+          <p class="flabel">COMPUTE CLASS</p>
+          <div class="class-row">
+            <div class="class-card selected">
+              <h3>Standard</h3>
+              <p>8 GB VRAM · SDXL, Flux schnell</p>
+              <p class="class-price">from $0.10 / image</p>
+            </div>
+            <div class="class-card">
+              <h3>High-Performance</h3>
+              <p>24 GB VRAM · Flux dev, video</p>
+              <p class="class-price">from $0.30 / image</p>
+            </div>
+          </div>
+
+          <div class="cost-row">
+            <p>Estimated cost (4 images)</p>
+            <p class="cost">$0.04 at @pixelforge</p>
+          </div>
+
+          <a class="btn-primary btn-block" href="#">Run on @pixelforge</a>
+          <p class="fine">Charged only for finished images. Cancel anytime.</p>
+        </form>
+
+        <section class="panel result">
+          <div class="result-head">
+            <p class="flabel">RESULT</p>
+            <p class="running">● Running · 2 of 4 images · 24 sec</p>
+          </div>
+          <h3>Live progress (WebSocket)</h3>
+          <div class="progress"><div style="width: 62%;"></div></div>
+          <p class="host-line">Host @pixelforge · RTX 4090 · Image 3 of 4 rendering</p>
+
+          <div class="preview">
+            <h3>Preview appears here</h3>
+            <p>Finished images replace this box. No custom canvas needed.</p>
+          </div>
+
+          <div class="btn-row">
+            <a class="btn" href="#">Download result</a>
+            <a class="btn" href="#">Cancel job</a>
+          </div>
+          <p class="fine">Job #2043 · When it finishes, the Download button turns lime and My jobs updates.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>GPUse — Make anything. Powered by idle GPUs.</p>
+      <p>Help · Terms · Privacy</p>
+    </footer>
+
+  </div>
+
+  <script>
+    // Single-select for chip groups (What to make, Aspect ratio)
+    document.querySelectorAll('.chips').forEach(function (group) {
+      group.querySelectorAll('a').forEach(function (chip) {
+        chip.addEventListener('click', function (e) {
+          e.preventDefault();
+          group.querySelectorAll('a').forEach(function (c) {
+            c.classList.remove('btn-primary');
+            c.classList.add('btn');
+          });
+          chip.classList.remove('btn');
+          chip.classList.add('btn-primary');
+        });
+      });
+    });
+
+    // Single-select for compute class cards
+    document.querySelectorAll('.class-row').forEach(function (group) {
+      group.querySelectorAll('.class-card').forEach(function (card) {
+        card.addEventListener('click', function () {
+          group.querySelectorAll('.class-card').forEach(function (c) {
+            c.classList.remove('selected');
+          });
+          card.classList.add('selected');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPUse — List your GPU</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/list-gpu.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="nav">
+      <a class="logo" href="index.html"><img src="assets/logo.svg" alt="GPUse"></a>
+      <nav class="nav-links">
+        <a href="browse.html">Browse GPUs</a>
+        <a href="create.html">Create</a>
+        <a href="my-jobs.html">My jobs</a>
+        <a href="host.html" class="active">Host</a>
+      </nav>
+      <a class="btn" href="browse.html">Switch to renting</a>
+    </header>
+
+    <main>
+      <div class="page-head">
+        <h1>List your GPU</h1>
+        <p class="sub">Three short steps on one page. You can change everything later.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step-card">
+          <p class="step-k">Step 1</p>
+          <h3>Check hardware</h3>
+          <p>Done</p>
+        </div>
+        <div class="step-card active">
+          <p class="step-k">Step 2</p>
+          <h3>Models and prices</h3>
+          <p>You are here</p>
+        </div>
+        <div class="step-card">
+          <p class="step-k">Step 3</p>
+          <h3>Schedule and limits</h3>
+          <p>Next</p>
+        </div>
+      </div>
+
+      <div class="stack">
+        <section class="panel">
+          <h2>1 · Your machine</h2>
+          <p class="panel-sub">We found this automatically. If it looks wrong, run the check again.</p>
+          <div class="spec-row"><span>GPU</span><strong>RTX 4090 · 24 GB VRAM</strong></div>
+          <div class="spec-row"><span>CPU</span><strong>Ryzen 9 7950X</strong></div>
+          <div class="spec-row"><span>Driver</span><strong>566.36</strong></div>
+          <div class="spec-row"><span>Internet</span><strong>500 Mbps upload</strong></div>
+          <div class="spec-row"><span>Status</span><strong class="lime">Compatible</strong></div>
+        </section>
+
+        <section class="panel">
+          <h2>2 · What can it run?</h2>
+          <p class="panel-sub">Tick the models you want to offer and set your price for each one.</p>
+
+          <label class="model-row">
+            <input class="cb" type="checkbox" checked>
+            <span class="model-name">Flux.1 dev · Image</span>
+            <input class="price-field" type="text" value="$0.01 / image">
+          </label>
+          <label class="model-row">
+            <input class="cb" type="checkbox" checked>
+            <span class="model-name">SDXL · Image</span>
+            <input class="price-field" type="text" value="$0.005 / image">
+          </label>
+          <label class="model-row">
+            <input class="cb" type="checkbox" checked>
+            <span class="model-name">Wan 2.2 · Video</span>
+            <input class="price-field" type="text" value="$0.06 / clip">
+          </label>
+          <label class="model-row">
+            <input class="cb" type="checkbox">
+            <span class="model-name">FLUX.1 Kontext · Image edit</span>
+            <input class="price-field" type="text" value="Not enough VRAM" disabled>
+          </label>
+        </section>
+
+        <section class="panel">
+          <h2>3 · Schedule and limits</h2>
+          <p class="panel-sub">Your PC only takes jobs when you say it can.</p>
+
+          <label class="flabel" for="available">AVAILABLE</label>
+          <select class="field" id="available">
+            <option selected>Weekdays 18:00 – 08:00</option>
+            <option>Every day 18:00 – 08:00</option>
+            <option>Weekends only</option>
+            <option>Always on</option>
+          </select>
+
+          <label class="flabel" for="max-hours">MAX HOURS PER DAY</label>
+          <select class="field" id="max-hours">
+            <option>4 hours</option>
+            <option selected>8 hours</option>
+            <option>12 hours</option>
+            <option>No limit</option>
+          </select>
+
+          <label class="flabel" for="pause">PAUSE WHEN I AM USING MY PC</label>
+          <select class="field" id="pause">
+            <option selected>Yes — stop jobs if the GPU is busy</option>
+            <option>No — keep jobs running</option>
+          </select>
+        </section>
+      </div>
+
+      <div class="btn-row actions">
+        <a class="btn-primary" href="host.html">Save and start hosting</a>
+        <a class="btn" href="host.html">Back</a>
+      </div>
+    </main>
+
+    <footer>
+      <p>GPUse — Make anything. Powered by idle GPUs.</p>
+      <p>Help · Terms · Privacy</p>
+    </footer>
+
+  </div>
+</body>
+</html>

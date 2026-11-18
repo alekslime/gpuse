@@ -26,6 +26,7 @@
       </nav>
       <a class="btn-primary" href="login.html">Sign in</a>
     </header>
+      <marquee style="color: #a3ff00;">WELCOME TO GPUse — Make anything, contribute with your GPU!</marquee>
 
     <main>
       <div class="page-head">
@@ -108,5 +109,22 @@
     </footer>
 
   </div>
+
+  <script>
+    // Single-select for the filter chips (All, Image, Video, Audio, 3D, Online now, Under $0.05)
+    document.querySelectorAll('.chips').forEach(function (group) {
+      group.querySelectorAll('a').forEach(function (chip) {
+        chip.addEventListener('click', function (e) {
+          e.preventDefault();
+          group.querySelectorAll('a').forEach(function (c) {
+            c.classList.remove('btn-primary');
+            c.classList.add('btn');
+          });
+          chip.classList.remove('btn');
+          chip.classList.add('btn-primary');
+        });
+      });
+    });
+  </script>
 </body>
 </html>

@@ -141,6 +141,12 @@ select.field option {
   font-weight: 600;
   padding: 12px;
   border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.card-btn:hover {
+  background: #b9ff3d;
 }
 
 /* ---------- Tables (My jobs, Host) ---------- */
@@ -185,7 +191,6 @@ td.st {
 }
 
 /* ---------- Square checkbox (List your GPU) ---------- */
-/* Plain square, lime when checked (like the Figma squares) */
 .cb {
   appearance: none;
   -webkit-appearance: none;
