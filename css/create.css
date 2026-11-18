@@ -1,0 +1,133 @@
+/* ============================================================
+   GPUse — create.css  (create.html only)
+   Two-column layout: job form on the left, live result on the
+   right. Chips, progress bar and preview box.
+   ============================================================ */
+
+.cols2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+  margin: 24px 0 40px;
+}
+
+.chips {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Compute class cards */
+.class-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.class-card {
+  background: #222222;
+  border: 1px solid #383838;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.class-card:not(.selected):hover {
+  border-color: #5a5a5a;
+  background: #262626;
+}
+
+.class-card.selected {
+  border-color: #a3ff00;
+}
+
+.class-card h3 {
+  font-size: 16px;
+}
+
+.class-card p {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.class-card p.class-price {
+  color: #a3ff00;
+}
+
+.cost-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: #b3b3b3;
+}
+
+.cost-row .cost {
+  font-weight: 700;
+  color: #a3ff00;
+}
+
+/* ---------- Result panel ---------- */
+.result-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.running {
+  font-size: 14px;
+  font-weight: 600;
+  color: #a3ff00;
+}
+
+.result h3 {
+  font-size: 16px;
+}
+
+/* Progress bar: outer track, inner lime fill (width set inline) */
+.progress {
+  background: #222222;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress > div {
+  background: #a3ff00;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.host-line {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.preview {
+  background: #222222;
+  border: 1px solid #383838;
+  border-radius: 8px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+  padding: 24px;
+}
+
+.preview h3 {
+  font-size: 20px;
+  color: #b3b3b3;
+}
+
+.preview p {
+  font-size: 14px;
+  color: #5a5a5a;
+}

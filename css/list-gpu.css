@@ -1,0 +1,114 @@
+/* ============================================================
+   GPUse — list-gpu.css  (list-gpu.html only)
+   Step cards on top, then the three stacked panels: machine,
+   models & prices, schedule. Checkbox lives in components.css.
+   ============================================================ */
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 24px 0 16px;
+}
+
+.step-card {
+  background: #181818;
+  border: 1px solid #383838;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.step-card .step-k {
+  font-size: 12px;
+  font-weight: 600;
+  color: #a3ff00;
+}
+
+.step-card h3 {
+  font-size: 18px;
+}
+
+.step-card p {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+/* Current step is solid lime */
+.step-card.active {
+  background: #a3ff00;
+  color: #0f0f0f;
+}
+
+.step-card.active .step-k,
+.step-card.active p {
+  color: #0f0f0f;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.panel h2 {
+  font-size: 24px;
+}
+
+.panel-sub {
+  font-size: 16px;
+  color: #b3b3b3;
+}
+
+/* "Your machine" label/value rows */
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: #b3b3b3;
+}
+
+.spec-row strong {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.spec-row strong.lime {
+  color: #a3ff00;
+}
+
+/* Model rows: checkbox, name, price box */
+.model-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.model-name {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.price-field {
+  background: #222222;
+  border: 1px solid #383838;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #ffffff;
+  width: 170px;
+}
+
+.price-field:disabled {
+  color: #5a5a5a;
+}
+
+.actions {
+  margin: 16px 0 32px;
+}
