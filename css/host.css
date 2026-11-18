@@ -1,0 +1,61 @@
+/* ============================================================
+   GPUse — host.css  (host.html only)
+   Wallet + sharing panels, telemetry stats and spacing
+   around the recent-jobs table (table in components).
+   ============================================================ */
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.panel h3 {
+  font-size: 24px;
+}
+
+.panel .big {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.panel-sub {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.flabel.lime {
+  color: #a3ff00;
+}
+
+.panel-online {
+  border-color: #a3ff00;
+}
+
+/* Telemetry row — 4 stat cards filling the column */
+.stats4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.stats4 .card-stat {
+  width: auto;
+}
+
+/* ---------- Section titles ---------- */
+.section-title {
+  margin-top: 8px;
+}
+
+.table-wrap {
+  margin-bottom: 32px;
+}
+
+/* Recent jobs scroll upward inside the panel */
+.jobs-marquee {
+  display: block;
+  width: 100%;
+}

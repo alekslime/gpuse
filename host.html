@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPUse — Host dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/host.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="nav">
+      <a class="logo" href="index.html"><img src="assets/logo.svg" alt="GPUse"></a>
+      <nav class="nav-links">
+        <a href="browse.html">Browse GPUs</a>
+        <a href="create.html">Create</a>
+        <a href="my-jobs.html">My jobs</a>
+        <a href="host.html" class="active">Host</a>
+      </nav>
+      <a class="btn" href="browse.html">Switch to renting</a>
+    </header>
+
+    <main>
+      <div class="page-head">
+        <h1>Host dashboard</h1>
+        <p class="sub">Good evening, @pixelforge. Your PC is online and ready for jobs.</p>
+      </div>
+
+      <div class="grid2">
+        <section class="panel">
+          <p class="flabel">WALLET BALANCE</p>
+          <p class="big">$86.40</p>
+          <p class="panel-sub">Next payout Friday · Minimum $20</p>
+          <a class="btn-primary" href="#">Withdraw</a>
+        </section>
+
+        <section class="panel panel-online">
+          <p class="flabel lime">SHARING — ONLINE</p>
+          <h3>RTX 4090 is accepting jobs</h3>
+          <p class="panel-sub">One button turns sharing on or off. In code this is one click handler that changes the status text.</p>
+          <a class="btn" href="#">Stop sharing</a>
+        </section>
+      </div>
+
+      <div class="stats4">
+        <div class="card-stat">
+          <p class="k">GPU LOAD</p>
+          <p class="v">38%</p>
+        </div>
+        <div class="card-stat">
+          <p class="k">TEMPERATURE</p>
+          <p class="v">61°C</p>
+        </div>
+        <div class="card-stat">
+          <p class="k">POWER</p>
+          <p class="v">214 W</p>
+        </div>
+        <div class="card-stat">
+          <p class="k">VRAM</p>
+          <p class="v">14.2 / 24 GB</p>
+        </div>
+      </div>
+
+      <h2 class="section-title">Recent jobs on your GPU</h2>
+      <div class="table-wrap">
+        <table>
+          <colgroup>
+            <col style="width: 140px;">
+            <col style="width: 360px;">
+            <col style="width: 260px;">
+            <col style="width: 140px;">
+            <col style="width: 140px;">
+            <col style="width: 160px;">
+          </colgroup>
+          <tr>
+            <th>JOB</th>
+            <th>MODEL</th>
+            <th>RENTER</th>
+            <th>TIME</th>
+            <th>EARNED</th>
+            <th>STATUS</th>
+          </tr>
+        </table>
+        <marquee class="jobs-marquee" direction="up" scrollamount="2" height="160" behavior="scroll">
+          <table>
+            <colgroup>
+              <col style="width: 140px;">
+              <col style="width: 360px;">
+              <col style="width: 260px;">
+              <col style="width: 140px;">
+              <col style="width: 140px;">
+              <col style="width: 160px;">
+            </colgroup>
+            <tr>
+              <td>#2056</td>
+              <td>Wan 2.2 · Video</td>
+              <td>EPISODI_TJETER</td>
+              <td>41 sec</td>
+              <td>$0.06</td>
+              <td class="st">Running</td>
+            </tr>
+            <tr>
+              <td>#2055</td>
+              <td>Flux.1 dev · Image</td>
+              <td>BackEndi</td>
+              <td>38 sec</td>
+              <td>$0.04</td>
+              <td class="st">Done</td>
+            </tr>
+            <tr>
+              <td>#2054</td>
+              <td>SDXL · Image</td>
+              <td>xXKorcariXx</td>
+              <td>17 sec</td>
+              <td>$0.02</td>
+              <td class="st">Done</td>
+            </tr>
+            <tr>
+              <td>#2054</td>
+              <td>SDXL · Image</td>
+              <td>Aleximon</td>
+              <td>17 sec</td>
+              <td>$0.02</td>
+              <td class="st">Done</td>
+            </tr>
+          </table>
+        </marquee>
+      </div>
+    </main>
+
+    <footer>
+      <p>GPUse — Make anything. Powered by idle GPUs.</p>
+      <p>Help · Terms · Privacy</p>
+    </footer>
+
+  </div>
+</body>
+</html>
