@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GPUse — Sign up</title>
+  <title>GPUse — Log in</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -24,18 +24,13 @@
         <a href="my-jobs.html">My jobs</a>
         <a href="host.html">Host</a>
       </nav>
-      <a class="btn" href="login.html">Log in</a>
+      <a class="btn" href="signup.html">Create account</a>
     </header>
 
     <main class="auth-wrap">
       <form class="panel auth-panel">
-        <h1>Create your account</h1>
-        <p class="sub">One account for both sides: rent GPUs, or earn with yours.</p>
-
-        <div class="field-group">
-          <label class="flabel" for="handle">HANDLE</label>
-          <input class="field" id="handle" type="text" placeholder="@yourname" required>
-        </div>
+        <h1>Welcome back</h1>
+        <p class="sub">Log in to run jobs, download results and manage your GPUs.</p>
 
         <div class="field-group">
           <label class="flabel" for="email">EMAIL</label>
@@ -47,16 +42,11 @@
           <input class="field" id="password" type="password" placeholder="••••••••" required>
         </div>
 
-        <div class="field-group">
-          <label class="flabel" for="confirm">CONFIRM PASSWORD</label>
-          <input class="field" id="confirm" type="password" placeholder="••••••••" required>
-        </div>
+        <a class="forgot" href="#">Forgot your password?</a>
 
-        <button class="btn-primary btn-block" type="submit">Create account</button>
+        <button class="btn-primary btn-block" type="submit">Log in</button>
 
-        <p class="fine">By creating an account you agree to the Terms and Privacy Policy.</p>
-
-        <p class="switch">Already have an account? <a href="login.html">Log in</a></p>
+        <p class="switch">New to GPUse? <a href="signup.html">Create an account</a></p>
       </form>
     </main>
 
@@ -66,5 +56,6 @@
     </footer>
 
   </div>
+    <script src="js/login.js"></script>
 </body>
 </html>
